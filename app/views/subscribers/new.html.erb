@@ -1,2 +1,11 @@
-<h1>Subscribers#new</h1>
-<p>Find me in app/views/subscribers/new.html.erb</p>
+<h1>Subscribe</h1>
+<!-- TODO: if I drop the :url parameter, rails looks for a route-generated method name like subscriber_url -- what's up with that? -->
+<%= form_for @subscriber, :url => {:action => :create} do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br/>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br/>
+<%= f.submit "Subscribe!" %>
+<% end %>

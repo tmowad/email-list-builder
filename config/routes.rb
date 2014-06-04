@@ -1,6 +1,7 @@
 EmailListBuilder::Application.routes.draw do
+  root "subscribers#new"
   get "subscribers/new"
-  get "subscribers/create"
+  post "subscribers/create"
   get "subscribers/confirm"
   get "subscribers/index"
   resources :items
