@@ -1,4 +1,8 @@
 EmailListBuilder::Application.routes.draw do
+  get "subscribers/new"
+  get "subscribers/create"
+  get "subscribers/confirm"
+  get "subscribers/index"
   resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.

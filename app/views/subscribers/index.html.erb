@@ -1,0 +1,15 @@
+<h1>Subscribers List</h1>
+
+<table id="subscriberList">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Confirmed? (y/n)</th>
+  </tr>
+<% @subscribers.each do |sub| %>
+  <tr>
+    <td><%= sub.name %></td>  
+    <td><%= sub.email %></td>  
+    <td><%= sub.confirmed ? 'y' : 'n' %></td>  
+  </tr>
+<% end %>
