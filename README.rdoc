@@ -1,0 +1,5 @@
+== README
+
+A simple webpage with an input box that takes an email address, and then sends a confirmation email.
+
+
