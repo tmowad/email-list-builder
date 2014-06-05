@@ -5,7 +5,7 @@ class SubscribersController < ApplicationController
 
   def create
     subscriber = Subscriber.create!(params[:subscriber].permit(:name, :email))
-    redirect_to :action => :new
+    redirect_to :action => :index
   end
 
   def confirm

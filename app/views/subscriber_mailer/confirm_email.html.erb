@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to our waiting list, <%= @subscriber.name %></h1>
+    <p>
+      You will be notified when our service is rolled out, but first you 
+      need to confirm your spot on the list by clicking <%= link_to("here", :url => @url) %>.
+    </p>
+    <p>Thanks for getting on board, and have a great day!</p>
+  </body>
+</html>
